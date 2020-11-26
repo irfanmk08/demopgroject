@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DBdetails</title>
+</head>
+<body>
+<h1 style="color:blue;">Student Details</h1>
+<ul>
+    {% for items in dbdetails %}
+    <li>{{items.name}}</li>
+    <li>{{items.Age}}</li>
+    <li>{{items.Address}}</li>
+    <li>{{items.gender}}</li>
+    <li>{{items.favorite_fruit}}</li>
+    <li>{{items.Email}}</li>
+    <li><img src="{{items.fileupload.url}}" width="100" height="100"></li>
+
+    {% endfor %}
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color:green">Employee Details</h1>
+<ul>
+    {% for items in viewdetails %}
+    <a href="{% url 'Emp' items.id %}">{{items.First_Name}}</a>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

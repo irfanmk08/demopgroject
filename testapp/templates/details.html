@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color:blue;">Employee Details</h1>
+<ul>
+    {% for items in viewdetails %}
+    <li>{{items.First_Name}}</li>
+    <li>{{items.Last_Name}}</li>
+    <li>{{items.Username}}</li>
+    <li>{{items.Address}}</li>
+    <li>{{items.Age}}</li>
+    <li>{{items.gender}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

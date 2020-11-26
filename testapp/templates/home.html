@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% block content %}
+<h1 class="demo">Hello {{name}}</h1>
+<img src="{% static 'images\download.jfif' %}">
+<form action="add" method="POST">
+    {% csrf_token %}
+    Enter first number:<input type="text" name="val1">
+    Enter second number:<input type="text" name="val2">
+    <input type="submit">
+</form>
+{% endblock %}
+</body>
+</html>
